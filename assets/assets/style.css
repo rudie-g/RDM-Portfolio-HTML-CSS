@@ -13,6 +13,8 @@ body {
     border-color: black;
     margin-left: 1px;
     align-items: center;
+    background-image: url(images/background-image.jpg); 
+    background-attachment: fixed;
 }
 
 header {
@@ -116,9 +118,8 @@ main {
 }
 
 .aboutMe p {
-    width: 100%;
-    margin-left: 50px;
-    margin-right: 150px;
+    width: 95%;
+    margin-left: 0px;
     padding-bottom: 10px;
     background-color: white;
     border-style: solid;
@@ -158,10 +159,17 @@ main {
         justify-content: center;
     }
 
+    .aboutMe {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     .aboutMe p {
-        width: 100%;
+        width: 80%;
         margin-left: 0;
         margin-right: 15px;
+        flex-wrap: wrap;
+        height: 100%;
     }
 }
 @media screen and (max-width:992px){
@@ -169,10 +177,16 @@ main {
         width: 100%;
         justify-content: center;
     }
+
+    .aboutMe {
+        flex-direction: column;
+    }
+
     .aboutMe p {
-        width: 100%;
-        margin-left: 0;
+        width: 97%;
+        margin-left:15px;
         margin-right: 15px;
+        height: 100%;
     }
     nav ul li {
         flex: 0 1 50px;
